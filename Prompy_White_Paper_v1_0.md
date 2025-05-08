@@ -177,8 +177,8 @@ Many consumers and e-commerce analysts need to track the price changes of specif
 agent: Price Monitor
 task: Track product prices from websites and send an email if they change
 model: MCP
-author: Rogério Figurelli
 inputs:
+  author: Rogério Figurelli
   email:
     sender: your@email.com
     receiver: receiver@email.com
@@ -196,12 +196,13 @@ The task of this agent is to track product prices from websites and send an emai
 Use libraries such as requests, BeautifulSoup, pandas, and smtplib.
 The script should detect changes compared to a previously saved file and sort the output by price.
 Load email configuration (sender, receiver, SMTP server, port, username, and password) from an external JSON file.
-Include author name "Rogério Figurelli" in the docstring.
+Include author name in the docstring.
 
 **Inputs to be loaded from `config.json`:**
 
 ```json
 {
+  "author": "Rogério Figurelli",
   "email": {
     "sender": "your@email.com",
     "receiver": "receiver@email.com",
