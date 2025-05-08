@@ -304,7 +304,7 @@ def price_agent():
         print("No changes in prices.")
 
 if __name__ == "__main__":
-    price_agent()
+    price_agent()```
 ```
 
 ---
